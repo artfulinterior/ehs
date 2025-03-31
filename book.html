@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artful Interiors</title>
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="book-style.css">
+    <link rel="shortcut icon" href="source/favicon.ico" type="image/x-icon">
+
+
+    <style>
+        /* Styling for the button */
+        .google-form-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background-color: #4285F4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .google-form-btn:hover {
+            background-color: #357ae8;
+        }
+    </style>
+
+
+</head>
+<body>
+    <script src="book-code.js"></script>
+    <script src="code.js"></script>
+
+    <div class="banner">
+        <div class="navbar">
+            <img onclick="btn('index.html');" src="source/logo.png" class="logo">
+            <ul>
+                <li><a href="#" class="highlight">Get Quote</a></li>
+                <li><a href="design.html">Design ideas</a></li>
+                <li><a href="how.html">How It Works?</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>TALK TO OUR DESIGNERS</h1>
+        </div>
+    </div>
+
+    <div class="up" onclick="totop();">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- <div class="m1">
+        <div class="d1">
+            <div class="final">
+                <div class="form" id="frm">
+                    <form action="form.php" method="GET">
+                        <input class="inp" id="nam" type="text" name="name" autocomplete="off" required>
+                        <label class="lab" id="lab_nam" for="name">
+                        <span class="spn" id="content-name">Name</span></label>
+                        
+                        <input class="inp" id="email" type="text" name="email" autocomplete="off" required>
+                        <label class="lab" id="lab_email" for="email">
+                        <span class="spn" id="content-email">Email</span></label>
+                        
+                        <input class="inp" id="num" type="text" name="num" min="5" max="10" autocomplete="off" required>
+                        <label class="lab" id="lab_num" for="num">
+                        <span class="spn" id="content-num">Mobile Number</span></label>
+                        
+                        <div>
+                            <input type="checkbox" id="whatsapp" checked>
+                            <label id="lab_chk" for="whatsapp">Send me updates on Whatsapp</label>
+                        </div>
+            
+                        <input class="inp" id="prop" type="text" name="prop" autocomplete="off" required>
+                        <label class="lab" id="lab_prop" for="prop">
+                        <span class="spn" id="content-prop">Looking For...</span></label>
+                    </form>
+                        <button onclick="frmsbm();" id="sub-btn">BOOK ONLINE CONSULTATION</button>
+                </div>
+                <div>
+                    <h2 id="subm">Your details are submitted. <br> Our staff will contact you soon.</h2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="m1">
+        <div class="d1">
+            <div class="final">
+                <h2>Fill out the form below to connect with our designers, and our team will get back to you shortly</h2>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcNrl1duLFGYjsRC8J5yi0Dw-3xJOQeNfk9AnUsGjvvUbL2Q/viewform?usp=header" target="_blank" class="google-form-btn">
+        Click here</a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="m2">
+        <div class="t2">
+            <h1>Exquisite interiors</h1>
+            <p>With breathtaking designs and expert on-site services, we bring dream homes to life.</p>
+        </div>
+        <div class="d2">
+            <div onclick="btn('show.html?topic=master-bedroom');">
+                <img src="source/Bedroom/demo.jpg">
+                <h3>Wardrobe</h3>
+            </div>
+            <div onclick="btn('show.html?topic=kitchen');">
+                <img src="source/design-background.jpg">
+                <h3>Kitchen</h3>
+            </div>
+            <div onclick="btn('show.html?topic=living-room');">
+                <img src="source/book-m2-3.jpg">
+                <h3>Living Room</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="m3">
+        <div class="d3">
+            <div>
+                <h1>Prioritizing Safety from Concept to Completion</h1>
+                <p>Safety remains our foremost priority throughout the entire interior design journey. From the conceptualization stage to the final installation, we adhere to stringent safety protocols to ensure a secure, efficient, and seamless experience for our clients.</p>
+                <a href="faqs.html"><p class="rd">know more →</p></a>
+            </div>
+            <div>
+                <img src="source/safe.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="m4">
+        <div class="t4">
+            <h1>FAQs</h1>
+        </div>
+        <div class="d4">
+            <div onclick="showorhide('p1');">
+                <h4>Is now a good time to start my home interiors?</h4>
+                <p id="p1" style="display:none;"><span><br>Yes, it is! From consultations at our Experience Centres to on-site installation, we follow a strict no-contact safety policy. We ensure everything from temperature checks to fumigation is taken care of, so you can confidently begin your dream project.</span>
+                <span><br>Since co-creating a design usually takes 4-6 weeks, you can begin with an online consultation. Our designers are available to assist you via video calls, or you can schedule an appointment to visit our Experience Centre.</span></p>
+            </div>
+            <div onclick="showorhide('p2');">
+                <h4>Can I meet my interior designer?</h4>
+                <p id="p2" style="display:none;"><br>Certainly, prioritizing safety, we offer two ways to interact:<br>1. Online consultation<br>2. Contactless, safe design meetings at our Experience Centres<br>Please note: If your location is in a Red or Containment Zone, we can only offer online consultations and will not be able to facilitate face-to-face meetings.</p>
+            </div>
+            <div onclick="showorhide('p3');">
+                <h4>Can I have a meeting at my home?</h4>
+                <p id="p3" style="display:none;"><br>We recommend meeting at our Experience Centre, which is fully safe for your visit. We are taking all necessary precautions to ensure a secure environment. However, if preferred, you can opt for an online consultation, and we’d be happy to discuss your project in detail.</p>
+            </div>
+            <div onclick="showorhide('p4');">
+                <h4>How can I select materials for design?</h4>
+                <p id="p4" style="display:none;"><br>While we can share images of materials and finishes during the design phase online, finalizing them will require a visit to our Experience Centre. Rest assured, our centres are safe, and we are following all necessary protocols. Please note, we can only facilitate visits from Green and Orange Zones and will not be able to accommodate visitors who do not adhere to safety guidelines.</p>
+            </div>
+            <div onclick="showorhide('p5');">
+                <h4>How will the measurements of my site be taken?</h4>
+                <p id="p5" style="display:none;"><br>Please share the floor plan of your home with our designers to kickstart your project. If you don’t have the floor plan, we will assign a representative for a site visit. Rest assured, our representatives will adhere to all safety protocols to ensure both their safety and yours.</p>
+            </div>
+            <div onclick="showorhide('p6');">
+                <h4>What will the timeline be for completing my project?</h4>
+                <p id="p6" style="display:none;"><br>We will keep you informed about the timelines based on discussions with the designers. The lockdown forced us to pause the handover of all projects, but with the relaxation of restrictions, things are gradually returning to normal. We're doing everything we can to make up for the lost time and ensure the safe delivery of your home interiors.</p>
+            </div>
+            <div onclick="showorhide('p7');">
+                <h4>Can I contact my interior designer for any queries or clarifications?</h4>
+                <p id="p7" style="display:none;"><br>Yes, absolutely. You can reach out to your designer via video calls or messages, whichever is more convenient for you. We are always here to assist you.</p>
+            </div>
+<!--            <div onclick="showorhide('p8');">-->
+<!--                <h4>Can I visit the Interia Experience Centre during the lockdown restrictions?</h4>-->
+<!--                <p id="p8" style="display:none;"><span><br>Yes, certainly. We have opened our Experience Centres in Delhi, Gurugram, Bangalore and Hyderabad and are functioning as per the directives from the government. We are taking all the necessary precautions.</span>-->
+<!--                <span><br>With temperature checks, use of alcohol-based hand rubs, and contactless meetings, there's nothing you need to be worried about.</span></p>-->
+<!--            </div>-->
+        </div>
+    </div>
+
+    <div class="m-last">
+        <div class="last">
+            <div>
+                <h1>Your dream home is just a click away</h1>
+                <button onclick="btn('#');">GET STARTED</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="ftr-m">
+            <div class="ftr-t">
+                <img src="source/logo.png">
+                <ul>
+                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=+918879109025&text=Hey There! I am interested in interior designs on website. Can I know more on this?"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100061907891820"><i class="fab fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/meetpatel_2801/"><i class="fab fa-instagram"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="ftr-d">
+                <div>
+                    <h3>Design ideas</h3>
+                    <ul>
+                       <li><a href="show.html?topic=living-room">Living Rooms</a></li>
+                        <li><a href="show.html?topic=kitchen">Kitchens</a></li>
+                        <li><a href="show.html?topic=master-bedroom">Wardrobe</a></li>
+                        <li><a href="show.html?topic=bathroom">Bathroom</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Locations</h3>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/New+Delhi" target="_blank">New Delhi</a></li>
+                        <li><a href="https://www.google.com/maps/place/Gurgaon" target="_blank">Gurgaon</a></li>
+                    </ul>
+                </div><div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="book.html">Book A Design</a></li>
+                        <li><a href="visit.html">Visit Us</a></li>
+                        <li><a href="how.html">How It Works?</a></li>
+                    </ul>
+                </div><div>
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li>Call us</li>
+                        <a href="tel:8888888888">+91 8888888888</a>
+                        <li>Email us</li>
+                        <a href="mailto:ehs2025@gmail.com">ehs2025@gmail.com</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="ftr-b">
+                <h2>Designed By Meet</h2>
+                <p>© 2025 embrelled-homez-solution.com | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
